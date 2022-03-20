@@ -37,6 +37,9 @@ i img{
     margin-right: 0.5em;
     color: white;
 }
+.contacto a:hover{
+    color: #18C1FF;
+}
 .buscador{
     width: 100%;
     height: 40px;
@@ -69,26 +72,36 @@ display: inline-block;
     margin-top: 2%;   
 }
 
+
+
+
+
 .ladob{
     width: 40%;      
     height: 100%;
-    margin-top: 0%;
     float: right;
 
 }
 .ladob div{
-    display: inline-flex;
+    display:inline-flex;
     margin-top: 2.5%;
+    gap:20px;
+    width: 25px;
+    height: 25px;
 
 
 }
     
 .ladob img{
         display: block;   
-        width:25px;
-        height: 25px;
-        
-    }
+        width:100%;
+        height: 100%;
+}
+
+
+
+
+
 #you img{
     width: 35px;
     height: 25px;
@@ -100,7 +113,7 @@ display: inline-block;
     width: 100%;
     height: 10px;
     border-bottom: 1px solid black;
-    background:linear-gradient(black,green ,yellow ) ;
+    background:linear-gradient(black,#058B3E,#D9FFE6) ;
 }
 
 
@@ -130,28 +143,30 @@ nav a:hover{
 }
 
 .pri{
-    width: 50px;
+    width: 100%;
     height: 350px;
     
 }
 #imagen{
-    width:auto;
+    object-fit:cover;
+    width:100%;
     height: 100%;
-    margin-left: 350px;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 .botones{
-    font-size: 50px;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
-    border-radius: 100px;
-    background-color:#252525;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:black;
     text-align: center;
-    font-weight: bold;
+    font-weight: 20px;
     position: absolute;
-    color: #fff;
-    margin-top: 120px;
+    color:#18C1FF;
+    font-family: monospace;
+    /* margin-top: 90px; */
     
 }
 .botones:hover{
@@ -160,11 +175,11 @@ nav a:hover{
 }
 .atras{
     left: 2%;
-    top: calc(50% - 70px);
+    top: calc(65% - 70px);
 }
 .adelante{
     right: 2%;
-    top: calc(50% - 70px);
+    top: calc(65% - 70px);
 }
 
 .secc{
@@ -256,32 +271,50 @@ nav a:hover{
 .tri div:hover{
     transform: scale(1.2);   
 }
-.caja p{
+
+.caja,.caja2{
+    border: 2px solid black;
+}
+.caja2::before{ 
+    content: "New"; 
+    position: absolute;
+    color: orange;
+    top:32px;
+    padding: 7px;
+    transform: rotate(-90deg);
+    right:-7px;
+    background: black; 
+}
+
+.caja p,.caja2 p{
     
     margin-top: -15px;
     width: 55px;
-    background: #18C1FF;
+    color: #fff;
+    background: black;
+    border-top: 1.5px solid orange;
+    border-right: 1.5px solid orange;
     position: absolute;
-    border: 1px solid black;
 }
 
-.caja img{
+.caja img,.caja2 img{
     width:170px;
     height:74%;
     margin-top:1em;
     display: block;
     margin-left:auto;
     margin-right: auto;
+  
 
 }
-.caja h3{
+.caja h3,.caja2 h3{
     border: 1px solid black;
     height:25px;
     width: 100%;
     text-align: center;
     color:white;
     background: black;
-    text-transform: lowercase;
+    
 }
 
 .pree{  
