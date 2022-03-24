@@ -57,6 +57,8 @@ i img{
     color: #18C1FF;
 }
 .buscador{
+    max-width: 1300px;
+    min-width: 460px;
     width: 100%;
     height: 40px;
     border: 1px solid black;
@@ -228,7 +230,7 @@ nav a:hover{
 }
 .seg{
 
-    width: 20%;
+    width: 25%;
     height: 100%;
     border-right: 2px solid black;
     border-bottom: 1px solid black;
@@ -239,16 +241,15 @@ nav a:hover{
     margin-right: auto;
     margin-left: auto;
     margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-bottom: 1.2em;
     display: block;
     width: 100%;
     height: 100%;
 }
 .guia h4{
-    background: #252525;
+    background: black;
     color: white;
-    padding: 10px;
-    text-transform: lowercase;
+    padding: 7px;
     margin-bottom: 10px;
     text-align: center;
     
@@ -260,6 +261,11 @@ nav a:hover{
     color: black;
     display: block;
     text-align: center;
+}
+.guia a:hover{
+    /* background: #252525; */
+    transform: scale(1.2);
+    color: #00CEFF;
 }
 
 .caja3{
@@ -299,21 +305,20 @@ nav a:hover{
     margin: 0;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-
+    grid-gap: 20px;
+    grid-auto-rows: 200px 
     
 }
+
+
 .tri div{
-    display: inline-block;
-    width: 200px;
-    height: 180px;   
-    margin-left:3.2%;
     margin-top: 2em;
     background: white;
     border-radius: 0% 0% 20%;
     position: relative;
 }
 .tri div:hover{
-    transform: scale(1.2);   
+    transform: scale(1.1);   
 }
 
 .caja,.caja2{
@@ -342,12 +347,14 @@ nav a:hover{
 }
 
 .caja img,.caja2 img{
-    width:170px;
-    height:74%;
+    width:55%;
+    height:72%;
     margin-top:1em;
     display: block;
     margin-left:auto;
     margin-right: auto;
+    border-radius: 0 0 20%;
+    object-fit: cover;
   
 
 }
@@ -361,7 +368,10 @@ nav a:hover{
     
 }
 
-
+.container_galeria{
+    max-width: 1300px;
+    min-width: 460px;
+}
 
 .galeria{  
     max-width: 1300px;
@@ -393,14 +403,14 @@ nav a:hover{
 
 
 .items img{
-    min-width: 100px;
-    min-height: 100px;
+    
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
     border: 1px solid white;
 }
+
 
 
 .fin{
@@ -460,4 +470,42 @@ nav a:hover{
 .primero a:hover,.segundo a:hover{ 
     color: #18C1FF;
 
+}
+@media screen and (max-width:460px){
+    .tri{
+        display: grid;
+        grid-template-columns: repeat(2,5fr);
+        grid-gap:20px;
+        grid-auto-rows: 107px;
+    }
+    .tri div{
+        width: 100px;
+        height: 110px;   
+    }
+   .galeria{
+       margin-left: 0;
+       width: 460px;
+       grid-auto-rows: 60px;
+       grid-auto-flow: 60px;
+   }
+
+   .prins{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+}
+   .final {
+       grid-column-start: span 2;       
+   }
+
+   i img{
+       margin-left: 90%;
+       margin-top: 140%;
+   }
+   body{
+       background: white;
+   }
+   .caja img, .caja2 img{
+       width: 90px;
+       height: 60px;
+   }
 }
