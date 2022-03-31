@@ -1,4 +1,4 @@
-let imagenes = ['imagenes/pri/Bangho.jpg','imagenes/pri/fondo.png','imagenes/pri/msi.png','imagenes/pri/Full-Steam-Ahead-1b.jpg'],
+let imagenes = ['imagenes/pri/Bangho.jpg','imagenes/pri/fondo.png','imagenes/pri/msi.jpg','imagenes/pri/Full-Steam-Ahead-1b.jpg'],
 cont = 0;
 
 function carrusel(pri){
